@@ -11,7 +11,7 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 
 app.use(express.static(pubDirPath))
 
-const port = 8080
+const port = process.env.PORT || 8080
 
 // app.com
 
