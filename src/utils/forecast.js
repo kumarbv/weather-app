@@ -15,7 +15,9 @@ const forecast = (latitude, longitude, callback) => {
             const summary = response.body.currently.summary
             const temperature = response.body.currently.temperature
             const rain = response.body.currently.precipProbability
-            callback(undefined, 'The weather summary is '+summary+'. The temperature is '+temperature+'F ,and there is a '+rain+'% probability of rain.')
+            const minTemp = response.body.daily.data.temperatureLow
+            const maxTemp = response.body.daily.data.temtemperatureHigh
+            callback(undefined, 'The weather summary is '+summary+'. The temperature is '+temperature+'F ,and there is a '+rain+'% probability of rain. The day\'s temperature ranged between a minimum of '+minTemp+', and a maximum of '+maxTemp+'.')
         }
     })
 }
