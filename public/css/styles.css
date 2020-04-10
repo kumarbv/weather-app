@@ -4,7 +4,6 @@ body {
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -52,4 +51,18 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+}
+
+.box {
+    float: right;
+    margin: 5px;
+    padding: 5px;
+}
+
+.main-para {
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #999;
+    background-color: #f6f6f6;
 }
